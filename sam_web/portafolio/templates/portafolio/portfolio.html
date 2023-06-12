@@ -1,0 +1,29 @@
+{% extends 'core/base.html'%}
+{% block title %}Portfolio{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/sam-portfolio.png' %}{% endblock %}
+
+{% block headers %}
+<h1>My Projects</h1>
+<span class="subheading">Python | Django | CSS | HTML5 | OOP | C++ | Git </span>
+{% endblock %}
+
+{% block content %}
+
+    {% for project in projects %}
+
+        <div class="row project">
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{{project.image.url}}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading title">{{project.title|title}}</h2><!--el segundo title es para poner en mayusculas la primera letra de cada palabra-->
+                <p>{{project.descripction}}</p>
+                {% if project.link %}
+                    <p><a href="{{project.link}}" target="_blank">Furthermore information visit my repository on GitHub...</a></p>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}

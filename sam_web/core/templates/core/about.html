@@ -1,0 +1,85 @@
+{% extends 'core/base.html' %}
+{% block title %}About Me{% endblock %}
+
+
+{% block background %}{% load static %}{% static '/core/img/about-bg.png' %}{% endblock %}
+
+{% block headers %}
+<h1>About Me</h1>
+<span class="subheading">Biography</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static '/core/img/me.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Angel Hernández</h2>
+        <p>I am a passionate engineer who loves being in contact with technology. I studied Electrical and Electronic Engineering at the Faculty of Engineering, National Autonomous University of Mexico (UNAM) in Mexico City. During my time there, I gained the necessary knowledge to design electronic systems using development boards such as microcontrollers and FPGAs. This enables me to tackle large-scale projects and utilize algorithms to solve complex problems. Throughout my university studies, I acquired proficiency in various programming languages, including <b>C++, Python, Java, and VHDL</b> for hardware description.</p>
+        <p>As a self-driven learner, I strive to acquire new skills continuously. Currently, I am taking French lessons to enhance my language abilities, and I am also enrolled in online courses on Udemy to further expand my knowledge base.</p>
+    </div>
+</div>
+<div>
+    <p>
+        <br>
+        <br>
+    </p>
+</div>
+
+<!--Cursos de Udemy-->
+<p>I am studying <b>Python</b> and <b>Django</b> deeper to increase my backend knowledge for web designing.</p>
+<p>These are my enrolled and completed courses on Udemy:</p>
+<p>
+    <br>
+</p>
+<p><b>1.- </b><a href="https://www.udemy.com/course/curso-django-2-practico-desarrollo-web-python-3/" target="_blank"><b>Django Practical Course</b></a> on Udemy</p>
+
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/django.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h3 class="section-heading title">Backend Web Development with Python and Django</h3><!--el segundo title es para poner en mayusculas la primera letra de cada palabra-->
+            <p> I am learning to use virtual environments with Pipenv to comfortably manage my projects, as well as the functionality of the Django Framework and the MVT based on Models, Views and Templates. I learnt how to deploy this website.</p>
+            <p><b>Duration: </b>12.5 hours</p>
+            <p><b>Enrolled</b></p>
+            <p>
+                <br>
+            </p>
+        </div>
+    </div>
+
+<p><b>2.- </b><a href="https://www.udemy.com/course/git-github/" target="_blank"><b>GIT+GitHub Course</b></a> on Udemy</p>
+
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/git.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h3 class="section-heading title">A Complete Version Control System From Scratch</h3><!--el segundo title es para poner en mayusculas la primera letra de cada palabra-->
+            <p>A solid base of Git commands and the necessary knowledge to work as a team in design projects for development applications. Manage the repositories of different projects.</p>
+            <p><b>Duration: </b>12 hours</p>
+            <p><b>Enrolled</b></p>
+            <p>
+                <br>
+            </p>
+        </div>
+    </div>
+
+<p><b>3.- </b><a href="https://www.udemy.com/course/create-a-code-writing-chatgpt-ai-site-with-django-python/" target="_blank"><b>A.I. Site with Django and ChatGPT</b></a> on Udemy</p>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/chatgpt.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h3 class="section-heading title">Create a Code Writing ChatGPT A.I. Site With Django Python</h3><!--el segundo title es para poner en mayusculas la primera letra de cada palabra-->
+            <p>I learnt how introduce to the OpenAI text completion API and how To Connect to The OpenAI API With Django.</p>
+            <p><b>Duration: </b>2.5 hours</p>
+            <p><b>Completed</b></p>
+            <p>
+                <br>
+            </p>
+        </div>
+    </div>
+{% endblock %}

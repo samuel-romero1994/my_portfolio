@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% block title %}Front Page{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/portada-sam.png' %}{% endblock %}
+
+{% block headers %}
+<h1>Angel Samuel Hernández</h1>
+<span class="subheading">Electrical And Electronic Engineer | Python Developer | Django</span>
+{% endblock %}
+
+{% block content %}
+<h1>Engineer Trained In Germany</h1>
+<p>My ability to understand and negotiate the electrical and electronics technologies brought me two amazing trainings in Germany:</p>
+<p><b>1.- </b><a href="https://www.erfi.de/home-en-us/" target="_blank"><b>erfi Ernst Fischer GmbH+Co.KG</b></a> in Freudenstadt</p>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/sam-erfi.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h3 class="section-heading title">Configuration In Workstation Systems</h3><!--el segundo title es para poner en mayusculas la primera letra de cada palabra-->
+            <p> Configuration of workbenches for electronics applications, didactic systems, electronic measuring and testing devices. This training allowed me to get a deep understanding of their products and how to configure them. Additionally, I did business to bring their technology to Mexico.</p>
+            <p><a href="https://www.erfi.de/todaije/en/?url=/todaije" target="_blank">Erfi's Showroom</a></p>
+            <p>
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+<p><b>2.- </b><a href="https://www.boschrexroth.com/en/dc/company/customer-and-innovation-center-ulm/" target="_blank"><b>Bosch Rexroth CU.BE</b></a> in Ulm</p>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/bosch-1.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'core/img/bosch-3.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h3 class="section-heading title">Initial Configurations Of Didactic Production Cells With Industry 4.0</h3><!--el segundo title es para poner en mayusculas la primera letra de cada palabra-->
+            <p>I got a training on the initial configurations of a Didactic Production Cells With Industry 4.0, to provide a training to my colleagues in Mexico. And then, my colleagues could install that equipment for our customer, due to they had purchased these products.</p>
+            <p><a href="https://www.youtube.com/watch?v=XAKrw2-Ug_8&ab_channel=BoschRexroth" target="_blank">Bosch Rexroth - CU.BE's Video</a></p>
+        </div>
+    </div>
+{% endblock %}
